@@ -16,8 +16,8 @@ export default function Dashboard() {
                 Dashboard
               </h2>
               <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                This is a demo dashboard page. Click the Login to Neosense
-                button.
+                Welcome {email}. This is a demo dashboard page. Click the Login
+                to Neosense button.
               </p>
               <LoginToNeosense email={email} />
               <Logout />
