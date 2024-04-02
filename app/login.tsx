@@ -12,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { loginAction } from "./login-action";
 import React from "react";
+import { redirect } from "next/navigation";
 
 export function LoginForm() {
   const [isLoading, setIsLoading] = React.useState(false);
@@ -33,7 +34,7 @@ export function LoginForm() {
             const result = await loginAction(data);
 
             if (result.type === "LOGIN_SUCCESS" && result.payload.redirect) {
-              window.location.href = result.payload.redirect;
+              redirect(result.payload.redirect);
             } else if (result.type === "LOGIN_FAILED" && result.payload.error) {
               setError(result.payload.error);
             } else {
