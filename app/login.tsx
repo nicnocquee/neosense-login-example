@@ -77,7 +77,7 @@ export function LoginForm() {
               The source code for this demo can be found in{" "}
               <a
                 className="text-primary underline-offset-4 underline"
-                href="https://github.com/hyperjumptech/neosense-login-example"
+                href="https://github.com/nicnocquee/neosense-login-example"
                 target="_blank"
                 rel="noreferrer"
               >
