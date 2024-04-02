@@ -71,6 +71,20 @@ export function LoginForm() {
             </Button>
           </div>
           {error && <p className="text-sm text-red-500">{error}</p>}
+          <div>
+            <p className="text-sm text-muted-foreground">
+              The source code for this demo can be found in{" "}
+              <a
+                className="text-primary underline-offset-4 underline"
+                href="https://github.com/hyperjumptech/neosense-login-example"
+                target="_blank"
+                rel="noreferrer"
+              >
+                this repository
+              </a>
+              .
+            </p>
+          </div>
         </form>
       </CardContent>
     </Card>
