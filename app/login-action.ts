@@ -16,6 +16,7 @@ export const loginAction = async (data: FormData) => {
       password: data.get("password") as string,
     });
 
+  // Check if the email and password are valid. For demo purposes, we're using hardcoded values from the env variables.
   if (
     email !== process.env.USER_EMAIL ||
     password !== process.env.USER_PASSWORD
@@ -29,7 +30,7 @@ export const loginAction = async (data: FormData) => {
   }
 
   const timestamp = Date.now().toString();
-  const userId = process.env.USER_ID || "";
+  const userId = process.env.USER_ID || ""; // For demo purposes, we're using a hardcoded value from the env variables.
   const signature = createSignature(timestamp, userId);
 
   const neosenseLoginUrl = `${process.env.NEOSENSE_BASE_URL}/api/integration/sso?timestamp=${timestamp}&user_id=${userId}&signature=${signature}&user_email=${email}`;
@@ -43,7 +44,7 @@ export const loginAction = async (data: FormData) => {
 };
 
 const createSignature = (timestamp: string, userId: string) => {
-  const privateKeyBase64 = process.env.PRIVATE_KEY || "";
+  const privateKeyBase64 = process.env.PRIVATE_KEY || ""; // base64 encoded private key
 
   if (!privateKeyBase64) {
     throw new Error("Private key not found");

@@ -29,7 +29,6 @@ export function LoginForm() {
         <form
           className="flex flex-col gap-4"
           action={async (data) => {
-            console.log("data", data);
             setIsLoading(true);
             const result = await loginAction(data);
 
