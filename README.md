@@ -1,3 +1,7 @@
+# Neosense Login Example
+
+This is a demo of how to login to Neosense via the BGN Dashboard (SSO Login). The important parts of the code are in the `app/dashboard/login-to-neosense-action.ts` file.
+
 ## Getting Started
 
 Install dependencies. This project uses [bun](https://bun.sh/) as a package manager.

@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import React from "react";
-import { loginAction } from "./login-to-neosense";
+import { loginAction } from "./login-to-neosense-action";
 
 export default function LoginToNeosense({ email }: { email: string }) {
   const [isLoading, setIsLoading] = React.useState(false);
