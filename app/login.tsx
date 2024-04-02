@@ -23,7 +23,7 @@ export function LoginForm() {
       <CardHeader>
         <CardTitle className="text-2xl">Login</CardTitle>
         <CardDescription>
-          Enter your email below to login to dummy BGN Gio dashboard
+          Enter your email below to login to dummy BGN dashboard
         </CardDescription>
       </CardHeader>
       <CardContent>

@@ -13,11 +13,12 @@ export default function Dashboard() {
           {email ? (
             <>
               <h2 className="text-lg font-medium leading-6 text-gray-900">
-                Dashboard
+                Demo BGN Dashboard
               </h2>
               <p className="mt-1 max-w-2xl text-sm text-gray-500">
                 Welcome {email}. This is a demo dashboard page. Click the Login
-                to Neosense button.
+                to Neosense button. You will be redirected to the Neosense and
+                be logged in as {email}
               </p>
               <LoginToNeosense email={email} />
               <Logout />
